@@ -131,7 +131,7 @@ MAILERS = {
 
 
 # Logging
-# Root logger defaults to WARNING, so INFO logs from the events app need their own handler
+# https://docs.djangoproject.com/en/6.1/topics/logging/
 
 LOGGING = {
     'version': 1,

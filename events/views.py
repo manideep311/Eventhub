@@ -43,7 +43,7 @@ class ReservationViewSet(viewsets.ModelViewSet):
             queryset = queryset.filter(event_id=event_id)
 
         return queryset
-  
+
     @action(detail=True, methods=['post'])
 
     def cancel(self, request, pk=None):
@@ -62,4 +62,4 @@ class ReservationViewSet(viewsets.ModelViewSet):
 
         reservation.save()
 
-        return Response(self.get_serializer(reservation).data)  
+        return Response(self.get_serializer(reservation).data)
